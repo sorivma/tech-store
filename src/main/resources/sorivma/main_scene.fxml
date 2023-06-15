@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="411.0" prefWidth="263.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sorivma.controller.MainSceneController">
+   <children>
+      <Button fx:id="catalogBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="75.0" mnemonicParsing="false" onAction="#loadCatalog" prefHeight="30.0" prefWidth="164.0" text="Каталог товаров" />
+      <Button fx:id="userBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="128.0" mnemonicParsing="false" onAction="#loadUser" prefHeight="30.0" prefWidth="164.0" text="Найти покупателей" />
+      <Button fx:id="manufactuerBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="182.0" mnemonicParsing="false" onAction="#loadManufactuers" prefHeight="30.0" prefWidth="164.0" text="Найти продукты" />
+      <Button fx:id="ordersBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="234.0" mnemonicParsing="false" onAction="#openOrders" prefHeight="30.0" prefWidth="164.0" text="Обзор заказов" />
+      <Label layoutX="50.0" layoutY="25.0" prefHeight="30.0" prefWidth="164.0" text="Магазин электроники">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="reportBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="284.0" mnemonicParsing="false" onAction="#openReports" prefHeight="30.0" prefWidth="164.0" text="Обзор отзывов" />
+      <Button fx:id="saleBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="335.0" mnemonicParsing="false" onAction="#openSales" prefHeight="30.0" prefWidth="164.0" text="Обзор скидок" />
+   </children>
+</AnchorPane>

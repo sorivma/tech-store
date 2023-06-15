@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:postgresql://localhost:5432/tech-store</property>
+    <property name="connection.driver_class">org.postgresql.Driver</property>
+    <property name="connection.username">postgres</property>
+    <property name="connection.password">admin</property>
+    <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+    <mapping class="sorivma.entity.Product"/>
+      <mapping class="sorivma.entity.Description"/>
+      <mapping class="sorivma.entity.Category"/>
+      <mapping class="sorivma.entity.Manufactuer"/>
+    <mapping class="sorivma.entity.Characteristic"/>
+      <mapping class="sorivma.entity.HibernateCheckLine"/>
+    <mapping class="sorivma.entity.HibernateCustomer"/>
+    <mapping class="sorivma.entity.HibernateOrders"/>
+      <mapping class="sorivma.entity.Report"/>
+    <mapping class="sorivma.entity.Sale"/>
+
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>

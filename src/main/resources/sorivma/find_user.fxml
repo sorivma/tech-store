@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="442.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sorivma.controller.FindUserController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="57.0" prefWidth="412.0" text="Поиск всех пользователей, которые заказали большее заданного числа товаров в одной позиции " textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="98.0" text="Пользователи" />
+      <ScrollPane layoutX="14.0" layoutY="115.0" prefHeight="271.0" prefWidth="234.0">
+         <content>
+            <VBox fx:id="users" prefHeight="275.0" prefWidth="240.0" />
+         </content>
+      </ScrollPane>
+      <TextField fx:id="quantity" layoutX="292.0" layoutY="115.0" prefHeight="25.0" prefWidth="78.0" />
+      <Label layoutX="299.0" layoutY="98.0" text="Количество" />
+      <Button fx:id="findBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="292.0" layoutY="175.0" mnemonicParsing="false" onAction="#find" prefHeight="25.0" prefWidth="78.0" text="Найти" textAlignment="CENTER" />
+      <Button fx:id="backBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="350.0" layoutY="361.0" mnemonicParsing="false" onAction="#goBack" prefHeight="25.0" prefWidth="78.0" text="Назад" textAlignment="CENTER" />
+      <Label fx:id="val" layoutX="375.0" layoutY="119.0" textFill="RED" />
+   </children>
+</AnchorPane>

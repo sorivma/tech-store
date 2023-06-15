@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane prefHeight="432.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sorivma.controller.FindProductsController">
+   <children>
+      <ScrollPane hbarPolicy="ALWAYS" layoutX="41.0" layoutY="154.0" prefHeight="226.0" prefWidth="508.0" vbarPolicy="ALWAYS">
+         <content>
+            <VBox fx:id="products" prefHeight="357.0" prefWidth="754.0" />
+         </content>
+      </ScrollPane>
+      <ScrollPane layoutX="349.0" layoutY="36.0" prefHeight="101.0" prefWidth="200.0">
+         <content>
+            <VBox fx:id="manufactuers" prefHeight="200.0" prefWidth="185.0" />
+         </content>
+      </ScrollPane>
+      <Label layoutX="27.0" layoutY="28.0" text="Поиск продукции производителя" />
+      <Label layoutX="349.0" layoutY="20.0" prefHeight="17.0" prefWidth="103.0" text="Производитель" />
+      <Label layoutX="41.0" layoutY="137.0" prefHeight="17.0" prefWidth="103.0" text="Продукция" />
+      <Button fx:id="backBtn" layoutX="15.0" layoutY="393.0" mnemonicParsing="false" onAction="#goBack" prefHeight="25.0" prefWidth="85.0" text="Назад" />
+      <Label fx:id="currentManufactuer" layoutX="27.0" layoutY="70.0" prefHeight="17.0" prefWidth="250.0" text="Текущий производитель: " />
+   </children>
+</AnchorPane>
